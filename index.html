@@ -169,5 +169,30 @@
     </a>
   </div>
 </section>
+<style>
+  .paneer-3d {
+    width: 150px;
+    height: 150px;
+    margin: 40px auto;
+    background-image: url('paneer1.jpg'); /* Replace with your image name */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    animation: floatUpDown 3s ease-in-out infinite;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotateX(10deg) rotateY(10deg);
+    }
+  }
+</style>
+
 
 
